@@ -1,6 +1,11 @@
 on:
   push:
+    branches:
+    - "*"
 jobs:
   build-and-test:
     runs-on: arc-runner-set
+    steps:
+      - name: Simple command
+        run: ls -lha
     
