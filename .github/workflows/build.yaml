@@ -16,9 +16,12 @@ jobs:
            JF_ACCESS_TOKEN: ${{ secrets.JF_ACCESS_TOKEN }}
            
        - name: uv test
+         env:  
+           JF_URL: ${{ vars.JF_URL }}
+           JF_ACCESS_TOKEN: ${{ secrets.JF_ACCESS_TOKEN }}
          run: |
            curl -LsSf https://astral.sh/uv/install.sh | sh
-           uv auth login $JF_URL --username tomas.miklusicak@cloudops.sk --password $JF_ACCESS_TOKEN
+           uv auth login ${JF_URL} --username tomas.miklusicak@cloudops.sk --password ${JF_ACCESS_TOKEN}
            uv init abc
            cd abc
            uv add yamllint
