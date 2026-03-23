@@ -1,0 +1,11 @@
+[project]
+name = "example"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[[tool.uv.index]]
+name="github-pypi"
+url = "https://trialty7f0x.jfrog.io/artifactory/api/pypi/github-pypi/simple"
