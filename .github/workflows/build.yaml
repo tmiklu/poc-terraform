@@ -18,6 +18,7 @@ jobs:
        - name: uv test
          run: |
            curl -LsSf https://astral.sh/uv/install.sh | sh
+           uv auth login $JF_URL --username tomas.miklusicak@cloudops.sk --password $JF_ACCESS_TOKEN
            uv init abc
            cd abc
            uv add yamllint
