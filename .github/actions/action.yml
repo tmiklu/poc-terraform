@@ -3,4 +3,5 @@ name: "Nested action.yml run from workflows"
 runs:
   steps:
     - name: simple step
+      shell: bash
       run: echo "Hello There!"
