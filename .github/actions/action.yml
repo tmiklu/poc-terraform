@@ -7,5 +7,5 @@ runs:
       shell: bash
       run: |
         echo "Hello There!"
-        echo $ABCX
-        echo $url
+        echo $JF_ACCESS_TOKEN
+        echo $JF_URL
