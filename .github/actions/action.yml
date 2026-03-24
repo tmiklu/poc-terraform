@@ -1,6 +1,7 @@
 name: "Nested action.yml run from workflows"
 
 runs:
+  using: composite
   steps:
     - name: simple step
       shell: bash
