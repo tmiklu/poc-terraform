@@ -1,0 +1,9 @@
+name: "Nested action.yml run from workflows"
+
+jobs:
+  build:
+     runs-on: ubuntu-latest
+       
+     steps:
+       - name: simple step
+         run: echo "Hello There!"
