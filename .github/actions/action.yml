@@ -5,4 +5,6 @@ runs:
   steps:
     - name: simple step
       shell: bash
-      run: echo "Hello There!"
+      run: |
+        echo "Hello There!"
+        env
