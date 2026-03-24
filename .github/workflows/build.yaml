@@ -2,7 +2,8 @@ name: "JFrog Integration Example"
 on: push
 
 env:
-  ABCX: tomas
+  ABCX: ${{ secrets.JF_ACCESS_TOKEN }}
+  url: ${{ vars.JF_URL }}
 
 jobs:
   build:
