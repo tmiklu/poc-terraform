@@ -1,6 +1,9 @@
 name: "JFrog Integration Example"
 on: push
 
+env:
+  ABCX: tomas
+
 jobs:
   build:
      runs-on: ubuntu-latest
