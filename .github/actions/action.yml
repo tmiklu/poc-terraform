@@ -8,3 +8,4 @@ runs:
       run: |
         echo "Hello There!"
         echo $ABCX
+        echo $url
